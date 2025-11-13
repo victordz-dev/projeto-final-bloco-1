@@ -1,0 +1,28 @@
+{
+  "name": "projeto-final-bloco-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victordz-dev/projeto-final-bloco-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/victordz-dev/projeto-final-bloco-1/issues"
+  },
+  "homepage": "https://github.com/victordz-dev/projeto-final-bloco-1#readme",
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@types/readline-sync": "^1.4.8",
+    "readline-sync": "^1.4.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
