@@ -4,8 +4,8 @@ export class Roupa extends Produto{
       private _size: string;
       private _color: string;
 
-      constructor(id: number, price: number, name: string, inStock: number, category: string, size: string, color: string, material: string) {
-            super(id, price, name, inStock, "Roupa", material);
+      constructor(id: number, price: number, name: string, inStock: number, category: number, size: string, color: string, material: string) {
+            super(id, price, name, inStock, category, material);
             this._size = size;
             this._color = color;
       };

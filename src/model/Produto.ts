@@ -3,10 +3,10 @@ export abstract class Produto{
       private _price: number;
       private _name: string;
       private _inStock: number;
-      private _category: string;
+      private _category: number;
       private _material: string;
 
-      constructor(id: number, price: number, name: string, inStock: number, category: string, material: string) {
+      constructor(id: number, price: number, name: string, inStock: number, category: number, material: string) {
             this._id = id;
             this._price = price;
             this._name = name;
@@ -33,7 +33,7 @@ export abstract class Produto{
 
       get category() {return this._category;};
 
-      set category(category: string) {this._category = category;};
+      set category(category: number) {this._category = category;};
 
       get material() {return this._material;};
 
@@ -58,6 +58,17 @@ export abstract class Produto{
       };
 
       detailProduct(): string {
-            return `ID do produto: ${this._id}\nNome: ${this._name}\nPreço: R$${this._price.toFixed(2)}\nCategoria: ${this._category}\nEm estoque: ${this._inStock} unidade(s).`;
+            let categoryName: string;
+            switch(this._category){
+                  case 1:
+                        categoryName = "Roupa";
+                        break;
+                  case 2:
+                        categoryName = "Acessório";
+                        break;
+                  default:
+                        categoryName = "Outro";
+            }
+            return `ID do produto: ${this._id}\nNome: ${this._name}\nPreço: R$${this._price.toFixed(2)}\nCategoria: ${categoryName}\nEm estoque: ${this._inStock} unidade(s).`;
       };
 };

@@ -3,8 +3,8 @@ import { Produto } from "./Produto";
 export class Acessorio extends Produto{
       private _type: string;
 
-      constructor(id: number, price: number, name: string, inStock: number, category: string, type: string, material: string) {
-            super(id, price, name, inStock, "Acessório", material);
+      constructor(id: number, price: number, name: string, inStock: number, category: number, type: string, material: string) {
+            super(id, price, name, inStock, category, material);
             this._type = type;
       };
 
